@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="greet">
+                <h1>Hello, my name is Cole</h1>
+            </div>
+            <div class="about">
+                <p>I am a web developer who loves working with JavaScript and the front end. </p>
+                <button class="viewBtn" onclick="viewWork()"><i class="bi bi-eye"></i> View my projects</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="picture">
+                <img src="img/IMG_20230410_203033_644.jpg" alt="Cole">
+              </div>
+        </div>
+    </main>
+    <div class="bar"></div>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="colorGame container pic" data-order="0" onclick="picClick(this)">
+            <div>
+                <!-- <h2>Color Fill Game</h2> -->
+                    <div class="projectImage">
+                        <img src="img/colorgameMock.png">
+                    </div>
+            </div>
+        </div>
+        <div class="facebookProject container pic" data-order="1" onclick="picClick(this)">
+            <div>
+                <!-- <h2>Facebook Calendar Project</h2> -->
+                    <div class="projectImage">
+                        <img src="img/facebookMock.png">
+                    </div>
+            </div>
+        </div>
+    </section>
+        <div class="popUp hidden">
+            <div class="xSymbol">
+                <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
+            </div>
+            <div class="left">
+                <img src="img/colors.png">
+            </div>
+            <div class="right">
+                <div class="interior">
+                    <!-- <h2>Project</h2> -->
+                    <h2 class="projectTitle">Color Fill Game</h2>
+                    <div class="languages">
+                        <h3>HTML</h3>
+                        <h3>CSS</h3>
+                        <h3>JavaScript</h3>
+                        <h3>Responsive</h3>
+                    </div>
+                    <!-- <h2 class="about">About</h2> -->
+                    <div class="description">
+                        <p>
+                            For this project, I used vanilla JavaScript to make a color fill game. Starting
+                            in the top left corner, the goal is to fill the entire square with the same color
+                            in as few turns as possible.
+                        </p>
+                        <p>
+                            Figuring out the logic for getting each direction to work properly, as well
+                            as developing the other features of this game, was a fun and challenging task.
+                            Learning and implementing data attributes went a long way in this project.
+                        </p>
+                        <p>
+                            To play the game, you click any of the 5 colored circles in the bottom to change
+                            the top left square, as well as any other squares you have captured. In the 4 
+                            circle row with the white buttons, the first resets the board, the second saves
+                            the current board when refreshing, the third clears the save, and the fourth shows
+                            what squares you will capture in the next move after hovering over the colored circles.
+                        </p>
+                        <p>
+                            A counter at the top keeps track of your turns. The export and import feature allows you
+                            to save the code for a board so you and a friend can play on the same board. There is a high 
+                            score tracker as well as a counter for each type of square. Finally, there is a menu to change 
+                            the color of the squares.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <a href='https://satchmocodes.github.io/SatchmoCodes.colorfill/' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
+                        <a href='https://github.com/SatchmoCodes/SatchmoCodes.colorfill' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="popUp hidden">
+            <div class="xSymbol">
+                <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+            </div>
+            <div class="left">
+                <img src="img/facebook.png">
+            </div>
+            <div class="right">
+                <div class="interior">
+                    <!-- <h2>Project</h2> -->
+                    <h2 class="projectTitle">Facebook Calendar Project</h2>
+                    <div class="languages">
+                        <h3>HTML</h3>
+                        <h3>CSS</h3>
+                        <h3>JavaScript</h3>
+                        <h3>EJS</h3>
+                        <h3>Node.js</h3>
+                        <h3>Python</h3>
+                        <h3>MongoDB</h3>
+                        <h3>NPM</h3>
+                    </div>
+                    <!-- <h2 class="about">About</h2> -->
+                    <div class="description">
+                        <p>
+                            This project uses Node.js and MongoDB to create a CRUD application. Using a
+                            Python script to extract entries from an Excel sheet, I was able to upload
+                            the entries into the database. The site holds the means to create new entries,
+                            methods to retrieve the entries, the ability to update entries, and the ability to delete
+                            them.
+                        </p>
+                        <p>
+                            In addition to the languages listed above, EJS and JavaScript code and functions allow
+                            the user to search specific dates and entries. There is also a multiple choice game at the
+                            bottom of the homepage that randomly grabs four entries and tracks correct answers.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button><i class="bi bi-play"></i> Demo</button>
+                        <button><i class="bi bi-code"></i> Code</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    <footer>
+        <form action="https://formspree.io/f/xknapjbk"method="POST">
+            <h2>Contact me!</h2>
+            <div>
+                <i class="bi bi-person"></i>
+                <input type="text" placeholder="name">
+            </div>
+            <div>
+                <i class="bi bi-envelope"></i>
+                <input type="email" id="email" placeholder="johnsmith@email.com">
+            </div>
+            <div>
+                <i class="bi bi-chat-right-dots"></i>
+                <textarea name="message" placeholder="message" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Send" class="sendBtn">
+        </form>
+    </footer>
+</body>
+</html>

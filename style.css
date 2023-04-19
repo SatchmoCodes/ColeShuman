@@ -1,0 +1,421 @@
+:root {
+    --gradient: linear-gradient(90deg, rgba(73,112,148,1) 0%, rgba(56,166,223,1) 0%, rgba(28,82,199,1) 100%, rgba(7,56,163,1) 100%);
+    --orange: rgb(255, 68, 0);
+    --blue: rgb(28, 28, 210);
+    --hoverBlue: rgb(28, 28, 192);
+    --activeBlue: rgb(28, 28, 180);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif; 
+}
+
+body {
+    background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(88,87,87,1) 50%, rgba(43,43,43,1) 100%);
+}
+
+button {
+    border-radius: 2em;
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    color: white;
+    padding: clamp(0.5em, 0.5vw + .1em, 2em);
+    font-size: clamp(0.5em, 0.5vw + 0.5em, 90px);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hoverBlue);
+}
+
+button:active {
+    background-color: var(--activeBlue);
+}
+
+.bar {
+    background-color: black;
+    width: 100%;
+    height: 0.5vh;
+}
+
+/* Main Section */
+
+
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--gradient);
+    color: white;
+}
+
+main .left, main .right {
+    /* display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: 50%;
+    margin: auto;
+}
+
+.greet {
+    position: relative;
+    animation: fadeDown 1.5s;
+    font-size: clamp(1em, 1vw + 0.5em, 90px);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+
+main .left p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: clamp(0.5em, 0.5vw + 0.5em, 90px);
+}
+
+main .left .about {
+    text-align: center;
+}
+
+main .left button {
+    margin-top: 1vw;
+    /* width: 5em; */
+    padding: clamp(0.5em, 0.5vw + 0.5em, 0.6em);
+    background-color: var(--blue);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main .right {
+    justify-content: center;
+}
+
+.picture img {
+    display: block;
+    margin: auto;
+    height: clamp(2vw, 15vw + 20em, 100em);
+    object-fit: contain;
+    border: 1px solid white;
+    animation: fadeUp 1.5s;
+    animation-fill-mode: forwards;
+    /* margin-right: 12vw;
+    margin-left: 1vw; */
+}
+
+/* Project Section */
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(88,87,87,1) 50%, rgba(43,43,43,1) 100%);
+}
+
+.projects h2 {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 11vh;
+    margin-bottom: 9vh;
+    color: white;
+    font-size: clamp(2em, 1vw + 1em, 5em);
+}
+
+.projects .container {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+
+.projectImage img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    cursor: pointer;
+    margin-bottom: 18%;
+}
+
+/* Project Popup */
+
+
+.popUp {
+    position: relative;
+    display: flex;
+    width: 75vw;
+    height: 32.5vw;
+    margin: auto;
+    margin-bottom: 25vh;
+    margin-top: 25vh;
+    z-index: 1;
+    padding: 3%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.popUp h2 {
+    font-size: clamp(2em, 1vw + 0.5em, 50px);
+}
+
+.popUp .xSymbol {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+}
+
+.popUp .xSymbol i {
+    transition: background-color 0.2s;
+    position: absolute;
+    font-size: clamp(1em, 1vw + 1em, 50px);
+}
+
+.popUp .xSymbol i:hover {
+    color: red;
+}
+
+.popUp .interior {
+    position: relative;
+}
+
+.popUp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.popUp .left {
+    display: flex;
+    flex-basis: 60%;
+}
+
+.popUp .right {
+    display: flex;
+    flex-basis: 40%;
+    margin-left: 0.5%;
+} 
+
+.popUp .interior {
+    display: flex;
+    flex-direction: column;
+}
+
+.popUp .projectTitle {
+    font-size: clamp(0.03em, 1vw + 1em, 60px);
+}
+
+.popUp .languages h3 {
+    display: inline-block;
+    margin-bottom: 1%;
+    border: 1px solid black;
+    padding: 0.2em;
+    font-size: clamp(0.01em, 1vw + 0.05em, 50px);
+}
+
+/* .popUp .about {
+    flex-basis: 10%;
+} */
+
+.popUp .buttons {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+/* .popUp .buttons button {
+    padding: clamp(0.5em, 0.5vw + .2em, 2em);
+    border-radius: 0.5em;
+    font-size: clamp(0.01em, 0.5vw + 0.5em, 50px);
+    cursor: pointer;
+} */
+
+.popUp .buttons i {
+    font-size: clamp(0.01em, 0.5vw + 0.5em, 50px);
+}
+
+.popUp .description {
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin-top: 2%;
+}
+
+.popUp .description p {
+    margin-bottom: 3%;
+    font-size: clamp(0.01em, 1vw + 0.1em, 50px);
+    font-family: 'Avenir', sans-serif;
+}
+
+/* Contact Form */
+
+footer {
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(26, 26, 26);
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    color: white;
+    text-align: center;
+    margin: 1em 1em;
+    font-size: 2em;
+}
+
+footer div input, footer div textarea {
+    width: calc(10vw + 10em);
+    padding: 0.5em;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 10%;
+}
+
+footer i {
+    color: white;
+    margin-right: 0.2em;
+    font-size: 1.5em;
+}
+
+.sendBtn {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 7em;
+    padding: .6em;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(28, 28, 210);
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.sendBtn:hover {
+    background-color: rgb(25, 25, 180);
+}
+
+.sendBtn:active {
+    background-color: rgb(22, 22, 156);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+@keyframes fadeDown {
+    0% { 
+        opacity: 0;
+        bottom: 10vh;
+    }
+    100% { 
+         opacity: 1;
+         bottom: 0vh;
+    }
+}
+
+@keyframes fadeUp {
+    0% { 
+        opacity: 0;
+        transform: translateY(10vmin);
+    }
+    100% { 
+         opacity: 1;
+         transform: translateY(0);
+    }
+}
+
+/* @keyframes moveDown {
+    from { top: 0px; }
+    to { top: 200px; }
+} */
+
+@media screen and (max-width: 1000px){
+    main .left, main .right {
+        width: 100%;
+    }
+
+    .projects .container {
+        flex-basis: 100%;
+    }
+
+    .popUp {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75vw;
+        height: 120vw;
+    }
+
+    .popUp .left {
+        order: 2;
+        flex-basis: 50%;
+    }
+
+    .popUp .right {
+        order: 1;
+        flex-basis: 50%;
+    }
+
+    .popUp h2 {
+        font-size: clamp(0.01em, 0.1vw + 0.05em, 100px);
+    }
+    
+    .popUp .projectTitle {
+        font-size: clamp(16px, 2vw + 1em, 60px);
+    }
+
+    .popUp .languages h3 {
+        font-size: clamp(0.01em, 1vw + 0.6em, 50px);
+    }
+
+    .popUp .description p {
+        font-size: 100%;
+    }
+
+    .popUp .description {
+        flex-grow: 1;
+        overflow-y: scroll;
+        height: 100px;
+    }
+
+    .popUp .left, .popUp .right {
+        flex-basis: 100%;
+    }
+
+}
