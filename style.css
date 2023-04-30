@@ -1,9 +1,9 @@
 :root {
     --gradient: linear-gradient(90deg, rgba(73,112,148,1) 0%, rgba(56,166,223,1) 0%, rgba(28,82,199,1) 100%, rgba(7,56,163,1) 100%);
     --orange: rgb(255, 68, 0);
-    --blue: rgb(28, 28, 210);
-    --hoverBlue: rgb(28, 28, 192);
-    --activeBlue: rgb(28, 28, 180);
+    --blue: rgb(23, 23, 130);
+    --hoverBlue: rgb(23, 23, 160);
+    --activeBlue: rgb(23, 23, 100);
 }
 
 * {
@@ -24,7 +24,7 @@ button {
     border-radius: 0.5em;
     color: white;
     padding: clamp(0.5em, 0.5vw + .1em, 2em);
-    font-size: clamp(0.5em, 0.5vw + 0.5em, 90px);
+    font-size: clamp(0.5em, 0.5vw + 0.75em, 90px);
     cursor: pointer;
 }
 
@@ -77,18 +77,27 @@ main .left, main .right {
 main .left p {
     margin-top: 1vw;
     margin-bottom: 1vw;
-    font-size: clamp(0.5em, 0.5vw + 0.5em, 90px);
+    font-size: clamp(1em, 0.5vw + 0.75em, 90px);
+    line-height: 1.5;
 }
 
 main .left .about {
     text-align: center;
+    opacity: 0;
+    width: 80%;
+    margin: auto;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
 }
 
 main .left button {
     margin-top: 1vw;
     /* width: 5em; */
-    padding: clamp(0.5em, 0.5vw + 0.5em, 0.6em);
-    background-color: var(--blue);
+    /* padding: clamp(0.5em, 0.25vw + 0.5em, 1em); */
+    /* background-color: var(--blue); */
     color: white;
     border: 1px solid black;
     cursor: pointer;
@@ -314,7 +323,7 @@ footer i {
     padding: .6em;
     display: flex;
     justify-content: center;
-    background-color: rgb(28, 28, 210);
+    background-color: var(--blue);
     color: white;
     border: 1px solid black;
     border-radius: 0.5em;
@@ -361,6 +370,15 @@ footer i {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 /* @keyframes moveDown {
     from { top: 0px; }
     to { top: 200px; }
@@ -370,6 +388,14 @@ footer i {
     main .left, main .right {
         width: 100%;
     }
+
+    main .left {
+        margin-bottom: 0;
+    }
+
+    /* main .left .about {
+        width: 100%;
+    } */
 
     .projects .container {
         flex-basis: 100%;
