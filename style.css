@@ -126,6 +126,7 @@ main .right {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(88,87,87,1) 50%, rgba(43,43,43,1) 100%);
 }
 
@@ -157,7 +158,7 @@ main .right {
     height: 100%;
     object-fit: scale-down;
     cursor: pointer;
-    margin-bottom: 18%;
+    margin-bottom: 5%;
 }
 
 /* Project Popup */
