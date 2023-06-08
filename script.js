@@ -1,6 +1,7 @@
 const popUp = document.querySelectorAll('.popUp');
 const pic = document.querySelectorAll('.pic')
 const xSymbol = document.querySelectorAll('.xSym')
+const h2 = document.querySelector('section h2')
 
 function picClick(e) {
     let x = e.dataset.order
@@ -18,5 +19,5 @@ function xClick(e) {
 }
 
 function viewWork() {
-    pic[1].scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+    h2.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
 }
