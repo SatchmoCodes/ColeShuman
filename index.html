@@ -31,7 +31,15 @@
     </main>
     <section class="projects">
         <h2>Projects</h2>
-        <div class="colorGame container pic" data-order="0" onclick="picClick(this)">
+        <div class="shumanBand container pic" data-order="0" onclick="picClick(this)">
+            <div>
+                <!-- <h2>Facebook Calendar Project</h2> -->
+                    <div class="projectImage">
+                        <img class="shumanBand" src="img/shumanbandMock.png">
+                    </div>
+            </div>
+        </div>
+        <div class="colorGame container pic" data-order="1" onclick="picClick(this)">
             <div>
                 <!-- <h2>Color Fill Game</h2> -->
                     <div class="projectImage">
@@ -39,7 +47,7 @@
                     </div>
             </div>
         </div>
-        <div class="facebookProject container pic" data-order="1" onclick="picClick(this)">
+        <div class="facebookProject container pic" data-order="2" onclick="picClick(this)">
             <div>
                 <!-- <h2>Facebook Calendar Project</h2> -->
                     <div class="projectImage">
@@ -47,7 +55,7 @@
                     </div>
             </div>
         </div>
-        <div class="sudoku container pic" data-order="2" onclick="picClick(this)">
+        <div class="sudoku container pic" data-order="3" onclick="picClick(this)">
             <div>
                 <!-- <h2>Facebook Calendar Project</h2> -->
                     <div class="projectImage">
@@ -56,9 +64,54 @@
             </div>
         </div>
     </section>
+    <div class="popUp hidden">
+        <div class="xSymbol">
+            <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
+        </div>
+        <div class="left">
+            <img src="img/shumanBand.png">
+        </div>
+        <div class="right">
+            <div class="interior">
+                <!-- <h2>Project</h2> -->
+                <h2 class="projectTitle">Shuman Band Site</h2>
+                <div class="languages">
+                    <h3>HTML</h3>
+                    <h3>CSS</h3>
+                    <h3>JavaScript</h3>
+                    <h3>OOP</h3>
+                    <h3>Responsive</h3>
+                </div>
+                <!-- <h2 class="about">About</h2> -->
+                <div class="description">
+                    <p>
+                        This project is a website I made for our family band. The site has 4 pages: a home
+                        page to talk about the band, a schedule page to show upcoming gigs and a full calendar, a
+                        merch page to link to a site to buy merch, and a photo gallery page.
+                    </p>
+                    <p>
+                        I created an object to hold information for each gig, and a class object for each day.
+                        The buildCalendar function I created will work for every new year. The schedule page 
+                        displays the 3 closest gigs, as well as a calendar and table to show every gig.
+                    </p>
+                    <p>
+                        Working on this project taught me how to use intersectionObserver for animations on
+                        scroll. I also learned about progressive images and how to create modals for them.
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="buttons">
+                    <a href='https://satchmocodes.github.io/TheShumanBand/index.html' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
+                    <a href='https://github.com/SatchmoCodes/TheShumanBand' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/colors.png">
@@ -106,13 +159,12 @@
                         <a href='https://github.com/SatchmoCodes/SatchmoCodes.colorfill' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
                     </div>
                 </div>
-                
             </div>
         </div>
 
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/facebook.png">
@@ -159,7 +211,7 @@
 
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="3" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/sudoku.png">
