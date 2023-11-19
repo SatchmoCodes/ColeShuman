@@ -17,7 +17,7 @@
                 <h1>Hello, my name is Cole</h1>
             </div>
             <div class="about">
-                <p>I am a web developer who loves working with JavaScript and the front end. I enjoy the challenges
+                <p>I am a Full Stack Developer with experience in Remix, React, and JavaScript. I enjoy the challenges
                     that coding brings, and I strive to learn and become better.
                 </p>
                 <button class="viewBtn" onclick="viewWork()"><i class="bi bi-eye"></i> View my projects</button>
@@ -31,15 +31,23 @@
     </main>
     <section class="projects">
         <h2>Projects</h2>
-        <div class="shumanBand container pic" data-order="0" onclick="picClick(this)">
+        <div class="remixColorGame container pic" data-order="0" onclick="picClick(this)">
             <div>
                 <!-- <h2>Facebook Calendar Project</h2> -->
                     <div class="projectImage">
-                        <img class="shumanBand" src="img/shumanBandMock.png">
+                        <img class="shumanBand" src="img/remixColorMock.png">
                     </div>
             </div>
         </div>
-        <div class="colorGame container pic" data-order="1" onclick="picClick(this)">
+        <div class="shumanBand container pic" data-order="1" onclick="picClick(this)">
+            <div>
+                <!-- <h2>Facebook Calendar Project</h2> -->
+                    <div class="projectImage">
+                        <img class="shumanBand" src="img/shumanbandMock.png">
+                    </div>
+            </div>
+        </div>
+        <div class="colorGame container pic" data-order="2" onclick="picClick(this)">
             <div>
                 <!-- <h2>Color Fill Game</h2> -->
                     <div class="projectImage">
@@ -47,7 +55,7 @@
                     </div>
             </div>
         </div>
-        <div class="facebookProject container pic" data-order="2" onclick="picClick(this)">
+        <div class="facebookProject container pic" data-order="3" onclick="picClick(this)">
             <div>
                 <!-- <h2>Facebook Calendar Project</h2> -->
                     <div class="projectImage">
@@ -55,11 +63,11 @@
                     </div>
             </div>
         </div>
-        <div class="sudoku container pic" data-order="3" onclick="picClick(this)">
+        <div class="sudoku container pic" data-order="4" onclick="picClick(this)">
             <div>
                 <!-- <h2>Facebook Calendar Project</h2> -->
                     <div class="projectImage">
-                        <img class="sudoku" src="img/sudokuMockup.png">
+                        <img class="sudoku" src="img/sudokuMock.png">
                     </div>
             </div>
         </div>
@@ -69,12 +77,66 @@
             <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
         </div>
         <div class="left">
+            <img src="img/remixColorFill.png">
+        </div>
+        <div class="right">
+            <div class="interior">
+                <!-- <h2>Project</h2> -->
+                <h2 class="projectTitle">ColorFill</h2>
+                <div class="languages">
+                    <h3>Remix</h3>
+                    <h3>React</h3>
+                    <h3>Prisma</h3>
+                    <h3>CSS</h3>
+                    <h3>Responsive</h3>
+                </div>
+                <!-- <h2 class="about">About</h2> -->
+                <div class="description">
+                    <p>*Note: the first time loading the page will take 10-15 seconds</p>
+                    <p>
+                        ColorFill is a full stack game built with Remix. This project expanded on my static version
+                        of the game built with JavaScript by implementing 3 unique gamemodes, a global leaderboard,
+                        user authentication, and real time multiplayer. 
+                    </p>
+                    <p>
+                        Free Play mode lets you choose the size of the board and gives you a randomized board. Progressive
+                        mode gives you a small board that progressively gets bigger with the goal of getting as low of a score
+                        as possible. Player vs Player allows you to create a game and face another player in real time on the same board
+                        to see who can capture half the board first.
+                    </p>
+                    <p>
+                        Scores are tracked and kept on the leaderboard as you play. From the leaderboard, you can play
+                        someone else's board they previously played and attempt to beat their score. In addition, personal stats 
+                        are also tracked at the top, as well as global win rates, games played, and current win streaks.
+                    </p>
+                    <p>
+                        Building this project broadened my experience in React and also gave me a great look at Remix.
+                        Working through a project of this scale made me overcome numerous obstacles, and forced me to dive
+                        deeper into many previously unheard of concepts, like Server Sent Events for example. As a reult of this, 
+                        I feel much more confident working with both the Front and Back end of projects after completing this one.
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="buttons">
+                    <a href='https://colorfill.fly.dev' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
+                    <a href='https://github.com/SatchmoCodes/colorfill' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popUp hidden">
+        <div class="xSymbol">
+            <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+        </div>
+        <div class="left">
             <img src="img/shumanBand.png">
         </div>
         <div class="right">
             <div class="interior">
                 <!-- <h2>Project</h2> -->
-                <h2 class="projectTitle">Shuman Band Site</h2>
+                <h2 class="projectTitle">The Shuman Band</h2>
                 <div class="languages">
                     <h3>HTML</h3>
                     <h3>CSS</h3>
@@ -111,7 +173,7 @@
     </div>
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/colors.png">
@@ -164,7 +226,7 @@
 
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="3" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/facebook.png">
@@ -211,7 +273,7 @@
 
         <div class="popUp hidden">
             <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="3" onclick="xClick(this)"></i>
+                <i class="bi bi-x xSym" data-order="4" onclick="xClick(this)"></i>
             </div>
             <div class="left">
                 <img src="img/sudoku.png">
