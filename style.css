@@ -405,7 +405,7 @@ footer i {
     .popUp {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 75vw;
+        width: 90vw;
         height: 120vw;
     }
 
@@ -443,6 +443,12 @@ footer i {
 
     .popUp .left, .popUp .right {
         flex-basis: 100%;
+    }
+
+    .popUp .buttons {
+        margin: auto;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
     }
 
 }
