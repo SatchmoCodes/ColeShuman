@@ -1,334 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" />
     <script src="script.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="left">
-            <div class="greet">
-                <h1>Hello, my name is Cole</h1>
-            </div>
-            <div class="about">
-                <p>I am a Full Stack Developer with experience in Remix, React, Prisma, and JavaScript. I enjoy the challenges
-                    that coding brings, and I strive to learn and become better.
-                </p>
-                <button class="viewBtn" onclick="viewWork()"><i class="bi bi-eye"></i> View my projects</button>
-            </div>
+      <div class="left">
+        <div class="greet">
+          <h1>Hello, my name is Cole</h1>
         </div>
-        <div class="right">
-            <div class="picture">
-                <img src="img/IMG_20230410_203033_644.jpg" alt="Cole">
-              </div>
+        <div class="about">
+          <p>
+            I am a Full Stack Developer with experience in Remix, React, React
+            Native, Prisma, and JavaScript. I enjoy the challenges that coding
+            brings, and I strive to learn and become better.
+          </p>
+          <button class="viewBtn" onclick="viewWork()">
+            <i class="bi bi-eye"></i> View my projects
+          </button>
         </div>
+      </div>
+      <div class="right">
+        <div class="picture">
+          <img src="img/IMG_20230410_203033_644.jpg" alt="Cole" />
+        </div>
+      </div>
     </main>
     <section class="projects">
-        <h2>Projects</h2>
-        <div class="remixColorGame container pic" data-order="0" onclick="picClick(this)">
-            <div>
-                <!-- <h2>Facebook Calendar Project</h2> -->
-                    <div class="projectImage">
-                        <img class="shumanBand" src="img/remixColorMock.png">
-                    </div>
-            </div>
+      <h2>Projects</h2>
+      <div
+        class="colorFillOnline container pic"
+        data-order="0"
+        onclick="picClick(this)"
+      >
+        <div>
+          <!-- <h2>Facebook Calendar Project</h2> -->
+          <div class="projectImage">
+            <img src="img/colorFillOnlineMock.png" />
+          </div>
         </div>
-        <div class="shumanBand container pic" data-order="1" onclick="picClick(this)">
-            <div>
-                <!-- <h2>Facebook Calendar Project</h2> -->
-                    <div class="projectImage">
-                        <img class="shumanBand" src="img/shumanBandMock.png">
-                    </div>
-            </div>
+      </div>
+      <div
+        class="shumanBand container pic"
+        data-order="1"
+        onclick="picClick(this)"
+      >
+        <div>
+          <!-- <h2>Facebook Calendar Project</h2> -->
+          <div class="projectImage">
+            <img class="shumanBand" src="img/shumanBandMock.png" />
+          </div>
         </div>
-        <div class="colorGame container pic" data-order="2" onclick="picClick(this)">
-            <div>
-                <!-- <h2>Color Fill Game</h2> -->
-                    <div class="projectImage">
-                        <img class="colorGame" src="img/colorgameMock.png">
-                    </div>
-            </div>
+      </div>
+      <div
+        class="remixColorGame container pic"
+        data-order="2"
+        onclick="picClick(this)"
+      >
+        <div>
+          <!-- <h2>Facebook Calendar Project</h2> -->
+          <div class="projectImage">
+            <img class="shumanBand" src="img/remixColorMock.png" />
+          </div>
         </div>
-        <div class="facebookProject container pic" data-order="3" onclick="picClick(this)">
-            <div>
-                <!-- <h2>Facebook Calendar Project</h2> -->
-                    <div class="projectImage">
-                        <img class="calendarProject" src="img/facebookMock.png">
-                    </div>
-            </div>
+      </div>
+
+      <div
+        class="colorGame container pic"
+        data-order="3"
+        onclick="picClick(this)"
+      >
+        <div>
+          <!-- <h2>Color Fill Game</h2> -->
+          <div class="projectImage">
+            <img class="colorGame" src="img/colorgameMock.png" />
+          </div>
         </div>
-        <div class="sudoku container pic" data-order="4" onclick="picClick(this)">
-            <div>
-                <!-- <h2>Facebook Calendar Project</h2> -->
-                    <div class="projectImage">
-                        <img class="sudoku" src="img/sudokuMock.png">
-                    </div>
-            </div>
+      </div>
+      <div
+        class="facebookProject container pic"
+        data-order="4"
+        onclick="picClick(this)"
+      >
+        <div>
+          <!-- <h2>Facebook Calendar Project</h2> -->
+          <div class="projectImage">
+            <img class="calendarProject" src="img/facebookMock.png" />
+          </div>
         </div>
+      </div>
+      <div class="sudoku container pic" data-order="5" onclick="picClick(this)">
+        <div>
+          <!-- <h2>Facebook Calendar Project</h2> -->
+          <div class="projectImage">
+            <img class="sudoku" src="img/sudokuMock.png" />
+          </div>
+        </div>
+      </div>
     </section>
     <div class="popUp hidden">
-        <div class="xSymbol">
-            <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="0" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/colorFillOnline.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">ColorFill Online</h2>
+          <div class="languages">
+            <h3>React Native</h3>
+            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>Firebase</h3>
+            <h3>Expo</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>
+              ColorFill Online is a React Native application I deployed to the
+              Play Store, Apple Store, and colorfillonline.com. It features 3
+              unique gamemodes, a global leaderboard, user authentication, and
+              real time multiplayer.
+            </p>
+            <p>
+              Building this project really took me out of my comfort zone and
+              forced me to take on unique challenges. Going into this project
+              with no experience with React Native nor Firebase, I can safely
+              say coming out the other side with this project I have learned
+              quite a lot about both.
+            </p>
+            <p>
+              A few key things among the many I learned from this project are
+              how to work with data in real time, handling navigation in React
+              Native, and how to implement context in React. Much of the
+              functionality of the app is built with real time data. The
+              leaderboard updates and animates new scores in real time, and
+              player vs player is built on real time updates. Implementing
+              context was also important to make light and dark mode work across
+              the app easily.
+            </p>
+            <p>
+              Independent of coding the project, I also faced the challenge of
+              getting the app on the respective app stores for Google and Apple.
+              Meeting all their requirements, such as Google's 20 tester
+              requirement, was difficult to say the least. However, having real
+              world experience taking user feedback and building and debugging
+              the project on my own has been invaluable to my skillset and my
+              work ethic.
+            </p>
+            <p>*Demo credentials*</p>
+            <p>Username: Test123</p>
+            <p>Password: Password</p>
+          </div>
+          <div class="buttons">
+            <a href="https://colorfillonline.com" target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a
+              href="https://github.com/SatchmoCodes/TheShumanBand"
+              target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
         </div>
-        <div class="left">
-            <img src="img/remixColorFill.png">
-        </div>
-        <div class="right">
-            <div class="interior">
-                <!-- <h2>Project</h2> -->
-                <h2 class="projectTitle">ColorFill</h2>
-                <div class="languages">
-                    <h3>Remix</h3>
-                    <h3>React</h3>
-                    <h3>Prisma</h3>
-                    <h3>CSS</h3>
-                    <h3>Responsive</h3>
-                </div>
-                <!-- <h2 class="about">About</h2> -->
-                <div class="description">
-                    <p>*Note: the first time loading the page may take 10-15 seconds</p>
-                    <p>
-                        ColorFill is a full stack game built with Remix. This project expanded on my static version
-                        of the game built with JavaScript by implementing 3 unique gamemodes, a global leaderboard,
-                        user authentication, and real time multiplayer. 
-                    </p>
-                    <p>
-                        Free Play mode lets you choose the size of the board and gives you a randomized board. Progressive
-                        mode gives you a small board that progressively gets bigger with the goal of getting as low of a score
-                        as possible. Player vs Player allows you to create a game and face another player in real time on the same board
-                        to see who can capture half the board first.
-                    </p>
-                    <p>
-                        Scores are tracked and kept on the leaderboard as you play. From the leaderboard, you can play
-                        someone else's board they previously played and attempt to beat their score. In addition, personal stats 
-                        are also tracked at the top, as well as global win rates, games played, and current win streaks.
-                    </p>
-                    <p>
-                        Building this project broadened my experience in React and also gave me a great look at Remix.
-                        Working through a project of this scale made me overcome numerous obstacles, and forced me to dive
-                        deeper into many previously unheard of concepts, like Server Sent Events for example. As a reult of this, 
-                        I feel much more confident working with both the Front and Back end of projects after completing this one.
-                    </p>
-                    <p>
-                        
-                    </p>
-                </div>
-                <div class="buttons">
-                    <a href='https://colorfill.fly.dev' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
-                    <a href='https://github.com/SatchmoCodes/colorfill' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="popUp hidden">
-        <div class="xSymbol">
-            <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="1" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/shumanBand.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">The Shuman Band</h2>
+          <div class="languages">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>OOP</h3>
+            <h3>Responsive</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>
+              This project is a website I made for our family band. The site has
+              4 pages: a home page to talk about the band, a schedule page to
+              show upcoming gigs and a full calendar, a merch page to link to a
+              site to buy merch, and a photo gallery page.
+            </p>
+            <p>
+              I created an object to hold information for each gig, and a class
+              object for each day. The buildCalendar function I created will
+              work for every new year. The schedule page displays the 3 closest
+              gigs, as well as a calendar and table to show every gig.
+            </p>
+            <p>
+              Working on this project taught me how to use intersectionObserver
+              for animations on scroll. I also learned about progressive images
+              and how to create modals for them.
+            </p>
+            <p></p>
+          </div>
+          <div class="buttons">
+            <a
+              href="https://satchmocodes.github.io/TheShumanBand/index.html"
+              target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a
+              href="https://github.com/SatchmoCodes/TheShumanBand"
+              target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
         </div>
-        <div class="left">
-            <img src="img/shumanBand.png">
-        </div>
-        <div class="right">
-            <div class="interior">
-                <!-- <h2>Project</h2> -->
-                <h2 class="projectTitle">The Shuman Band</h2>
-                <div class="languages">
-                    <h3>HTML</h3>
-                    <h3>CSS</h3>
-                    <h3>JavaScript</h3>
-                    <h3>OOP</h3>
-                    <h3>Responsive</h3>
-                </div>
-                <!-- <h2 class="about">About</h2> -->
-                <div class="description">
-                    <p>
-                        This project is a website I made for our family band. The site has 4 pages: a home
-                        page to talk about the band, a schedule page to show upcoming gigs and a full calendar, a
-                        merch page to link to a site to buy merch, and a photo gallery page.
-                    </p>
-                    <p>
-                        I created an object to hold information for each gig, and a class object for each day.
-                        The buildCalendar function I created will work for every new year. The schedule page 
-                        displays the 3 closest gigs, as well as a calendar and table to show every gig.
-                    </p>
-                    <p>
-                        Working on this project taught me how to use intersectionObserver for animations on
-                        scroll. I also learned about progressive images and how to create modals for them.
-                    </p>
-                    <p>
-                        
-                    </p>
-                </div>
-                <div class="buttons">
-                    <a href='https://satchmocodes.github.io/TheShumanBand/index.html' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
-                    <a href='https://github.com/SatchmoCodes/TheShumanBand' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-        <div class="popUp hidden">
-            <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
-            </div>
-            <div class="left">
-                <img src="img/colors.png">
-            </div>
-            <div class="right">
-                <div class="interior">
-                    <!-- <h2>Project</h2> -->
-                    <h2 class="projectTitle">Color Fill Game</h2>
-                    <div class="languages">
-                        <h3>HTML</h3>
-                        <h3>CSS</h3>
-                        <h3>JavaScript</h3>
-                        <h3>OOP</h3>
-                        <h3>Responsive</h3>
-                    </div>
-                    <!-- <h2 class="about">About</h2> -->
-                    <div class="description">
-                        <p>
-                            For this project, I used vanilla JavaScript to make a color fill game. Starting
-                            in the top left corner, the goal is to fill the entire square with the same color
-                            in as few turns as possible.
-                        </p>
-                        <p>
-                            Building this project helped me refine my skills in Object Oriented Programming. I used
-                            a class to create and give properties to each individual square, and put those squares into
-                            a 2-dimensional array to make tracking them easier. I also got more experience working with 
-                            ternary operators which helped make the code more concise.
-                        </p>
-                        <p>
-                            To play the game, you click any of the 5 colored circles in the bottom to change
-                            the top left square, as well as any other squares you have captured. In the 3 
-                            circle row with the white buttons, the first resets the board, the second saves
-                            the current board when refreshing, and the third shows what squares you will 
-                            capture in the next move after hovering over the colored circles.
-                        </p>
-                        <p>
-                            A counter at the top keeps track of your turns. The export and import feature allows you
-                            to save the code for a board so you and a friend can play on the same board. There is a high 
-                            score tracker as well as a counter for each type of square. Finally, there is a menu to change 
-                            the color of the squares.
-                        </p>
-                    </div>
-                    <div class="buttons">
-                        <a href='https://satchmocodes.github.io/SatchmoCodes.colorfill/' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
-                        <a href='https://github.com/SatchmoCodes/SatchmoCodes.colorfill' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
-                    </div>
-                </div>
-            </div>
+    <div class="popUp hidden">
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="2" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/remixColorFill.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">ColorFill</h2>
+          <div class="languages">
+            <h3>Remix</h3>
+            <h3>React</h3>
+            <h3>Prisma</h3>
+            <h3>CSS</h3>
+            <h3>Responsive</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>*Note: the first time loading the page may take 10-15 seconds</p>
+            <p>
+              ColorFill is a full stack game built with Remix. This project
+              expanded on my static version of the game built with JavaScript by
+              implementing 3 unique gamemodes, a global leaderboard, user
+              authentication, and real time multiplayer.
+            </p>
+            <p>
+              Free Play mode lets you choose the size of the board and gives you
+              a randomized board. Progressive mode gives you a small board that
+              progressively gets bigger with the goal of getting as low of a
+              score as possible. Player vs Player allows you to create a game
+              and face another player in real time on the same board to see who
+              can capture half the board first.
+            </p>
+            <p>
+              Scores are tracked and kept on the leaderboard as you play. From
+              the leaderboard, you can play someone else's board they previously
+              played and attempt to beat their score. In addition, personal
+              stats are also tracked at the top, as well as global win rates,
+              games played, and current win streaks.
+            </p>
+            <p>
+              Building this project broadened my experience in React and also
+              gave me a great look at Remix. Working through a project of this
+              scale made me overcome numerous obstacles, and forced me to dive
+              deeper into many previously unheard of concepts, like Server Sent
+              Events for example. As a reult of this, I feel much more confident
+              working with both the Front and Back end of projects after
+              completing this one.
+            </p>
+            <p></p>
+          </div>
+          <div class="buttons">
+            <a href="https://colorfill.fly.dev" target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a href="https://github.com/SatchmoCodes/colorfill" target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="popUp hidden">
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="3" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/colors.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">Color Fill Game</h2>
+          <div class="languages">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>OOP</h3>
+            <h3>Responsive</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>
+              For this project, I used vanilla JavaScript to make a color fill
+              game. Starting in the top left corner, the goal is to fill the
+              entire square with the same color in as few turns as possible.
+            </p>
+            <p>
+              Building this project helped me refine my skills in Object
+              Oriented Programming. I used a class to create and give properties
+              to each individual square, and put those squares into a
+              2-dimensional array to make tracking them easier. I also got more
+              experience working with ternary operators which helped make the
+              code more concise.
+            </p>
+            <p>
+              To play the game, you click any of the 5 colored circles in the
+              bottom to change the top left square, as well as any other squares
+              you have captured. In the 3 circle row with the white buttons, the
+              first resets the board, the second saves the current board when
+              refreshing, and the third shows what squares you will capture in
+              the next move after hovering over the colored circles.
+            </p>
+            <p>
+              A counter at the top keeps track of your turns. The export and
+              import feature allows you to save the code for a board so you and
+              a friend can play on the same board. There is a high score tracker
+              as well as a counter for each type of square. Finally, there is a
+              menu to change the color of the squares.
+            </p>
+          </div>
+          <div class="buttons">
+            <a
+              href="https://satchmocodes.github.io/SatchmoCodes.colorfill/"
+              target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a
+              href="https://github.com/SatchmoCodes/SatchmoCodes.colorfill"
+              target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="popUp hidden">
-            <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="3" onclick="xClick(this)"></i>
-            </div>
-            <div class="left">
-                <img src="img/facebook.png">
-            </div>
-            <div class="right">
-                <div class="interior">
-                    <!-- <h2>Project</h2> -->
-                    <h2 class="projectTitle">Calendar Project</h2>
-                    <div class="languages">
-                        <h3>HTML</h3>
-                        <h3>CSS</h3>
-                        <h3>JavaScript</h3>
-                        <h3>JSON</h3>
-                        <h3>Python</h3>
-                        <h3>Responsive</h3>
-                    </div>
-                    <!-- <h2 class="about">About</h2> -->
-                    <div class="description">
-                        <p>
-                            This project holds a list of humorous calendar entries and displays them in a carousel on the home page.
-                            The game page includes a multiple choice game that randomly grabs four titles and one piece of content
-                            and tracks your score. Finally, the view page shows an accurate calendar of the year as well as a table 
-                            showing all the entries for the month.
-                        </p>
-                        <p>
-                            Using a Python script, I grabbed the data for the entries off an Excel sheet and placed them into a JSON file.
-                            I used a fetch statement to asynchronously retrieve the data from the JSON file, and a whole host of other functions
-                            and event listeners to control the functionality of the pages.
-                        </p>
-                        <p>
-                            The most fun and challenging part of this project was building the animations and making them look smooth.
-                            There are a lot of moving parts to an animation like that and getting every aspect of it to look right took
-                            a lot of perfecting.
-                        </p>
-                    </div>
-                    <div class="buttons">
-                        <a href='https://satchmocodes.github.io/CalendarProject/index.html' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
-                        <a href='https://github.com/SatchmoCodes/CalendarProject' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
-                    </div>
-                </div>
-                
-            </div>
+    <div class="popUp hidden">
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="4" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/facebook.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">Calendar Project</h2>
+          <div class="languages">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>JSON</h3>
+            <h3>Python</h3>
+            <h3>Responsive</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>
+              This project holds a list of humorous calendar entries and
+              displays them in a carousel on the home page. The game page
+              includes a multiple choice game that randomly grabs four titles
+              and one piece of content and tracks your score. Finally, the view
+              page shows an accurate calendar of the year as well as a table
+              showing all the entries for the month.
+            </p>
+            <p>
+              Using a Python script, I grabbed the data for the entries off an
+              Excel sheet and placed them into a JSON file. I used a fetch
+              statement to asynchronously retrieve the data from the JSON file,
+              and a whole host of other functions and event listeners to control
+              the functionality of the pages.
+            </p>
+            <p>
+              The most fun and challenging part of this project was building the
+              animations and making them look smooth. There are a lot of moving
+              parts to an animation like that and getting every aspect of it to
+              look right took a lot of perfecting.
+            </p>
+          </div>
+          <div class="buttons">
+            <a
+              href="https://satchmocodes.github.io/CalendarProject/index.html"
+              target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a
+              href="https://github.com/SatchmoCodes/CalendarProject"
+              target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="popUp hidden">
-            <div class="xSymbol">
-                <i class="bi bi-x xSym" data-order="4" onclick="xClick(this)"></i>
-            </div>
-            <div class="left">
-                <img src="img/sudoku.png">
-            </div>
-            <div class="right">
-                <div class="interior">
-                    <!-- <h2>Project</h2> -->
-                    <h2 class="projectTitle">Sudoku</h2>
-                    <div class="languages">
-                        <h3>HTML</h3>
-                        <h3>CSS</h3>
-                        <h3>JavaScript</h3>
-                        <h3>Responsive</h3>
-                    </div>
-                    <!-- <h2 class="about">About</h2> -->
-                    <div class="description">
-                        <p>
-                            For this project, I used vanilla JavaScript to recreate sudoku. I integrated a sudoku API from Dosuku
-                            to generate the numbers, solution, and difficulty level for each puzzle.
-                        </p>
-                        <p>
-                            The project features an eraser, an option for note taking and a brush to highlight all of a specific
-                            number. Players can use either the built in numpad or their own keyboard to enter numbers. There is a
-                            built in timer and mistakes are tracked throughout each game.
-                        </p>
-                        <p>
-                            Interacting with this API was a great learning experience. It helped me get more confident working with
-                            asynchronous data. Developing all the other features of this project was also a fun and challenging task.
-                        </p>
-                    </div>
-                    <div class="buttons">
-                        <a href='https://satchmocodes.github.io/Sudoku/' target="_blank"><button><i class="bi bi-play"></i> Demo</button></a>
-                        <a href='https://github.com/SatchmoCodes/Sudoku' target="_blank"><button><i class="bi bi-code"></i> Code</button></a>
-                    </div>
-                </div>
-                
-            </div>
+    <div class="popUp hidden">
+      <div class="xSymbol">
+        <i class="bi bi-x xSym" data-order="5" onclick="xClick(this)"></i>
+      </div>
+      <div class="left">
+        <img src="img/sudoku.png" />
+      </div>
+      <div class="right">
+        <div class="interior">
+          <!-- <h2>Project</h2> -->
+          <h2 class="projectTitle">Sudoku</h2>
+          <div class="languages">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>Responsive</h3>
+          </div>
+          <!-- <h2 class="about">About</h2> -->
+          <div class="description">
+            <p>
+              For this project, I used vanilla JavaScript to recreate sudoku. I
+              integrated a sudoku API from Dosuku to generate the numbers,
+              solution, and difficulty level for each puzzle.
+            </p>
+            <p>
+              The project features an eraser, an option for note taking and a
+              brush to highlight all of a specific number. Players can use
+              either the built in numpad or their own keyboard to enter numbers.
+              There is a built in timer and mistakes are tracked throughout each
+              game.
+            </p>
+            <p>
+              Interacting with this API was a great learning experience. It
+              helped me get more confident working with asynchronous data.
+              Developing all the other features of this project was also a fun
+              and challenging task.
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="https://satchmocodes.github.io/Sudoku/" target="_blank"
+              ><button><i class="bi bi-play"></i> Demo</button></a
+            >
+            <a href="https://github.com/SatchmoCodes/Sudoku" target="_blank"
+              ><button><i class="bi bi-code"></i> Code</button></a
+            >
+          </div>
         </div>
+      </div>
+    </div>
     <footer>
-        <form action="https://formspree.io/f/xknapjbk"method="POST">
-            <h2>Contact me!</h2>
-            <div>
-                <i class="bi bi-person"></i>
-                <input type="text" placeholder="name">
-            </div>
-            <div>
-                <i class="bi bi-envelope"></i>
-                <input type="email" id="email" placeholder="johnsmith@email.com">
-            </div>
-            <div>
-                <i class="bi bi-chat-right-dots"></i>
-                <textarea name="message" placeholder="message" rows="10"></textarea>
-            </div>
-            <input type="submit" value="Send" class="sendBtn">
-        </form>
+      <form action="https://formspree.io/f/xknapjbk" method="POST">
+        <h2>Contact me!</h2>
+        <div>
+          <i class="bi bi-person"></i>
+          <input type="text" placeholder="name" />
+        </div>
+        <div>
+          <i class="bi bi-envelope"></i>
+          <input type="email" id="email" placeholder="johnsmith@email.com" />
+        </div>
+        <div>
+          <i class="bi bi-chat-right-dots"></i>
+          <textarea name="message" placeholder="message" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Send" class="sendBtn" />
+      </form>
     </footer>
-</body>
+  </body>
 </html>
